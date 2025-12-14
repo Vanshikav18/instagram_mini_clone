@@ -1,0 +1,9 @@
+<h2>Feed</h2>
+<a href="/create">create Post</a>
+
+{% for post in posts %}
+  <div>
+    <img src="{{ post.image_url }}" width="200">
+    <p>{{ post.caption }}</p>
+    </div>
+    {% endfor %}
